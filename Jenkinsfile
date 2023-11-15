@@ -7,7 +7,7 @@ pipeline {
     stage('setup') {
         steps {
         // url lambdatest tunnel file
-        sh 'wget https://downloads.lambdatest.com/tunnel/v3/linux/64bit/LT_Linux.zip'
+        sh 'curl https://downloads.lambdatest.com/tunnel/v3/linux/64bit/LT_Linux.zip'
         sh 'sudo apt-get install zip unzip -y'
         sh 'unzip -o LT_Linux.zip'
         // We use Environmental variables for storing username and access key as this is the best practice
