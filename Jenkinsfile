@@ -28,7 +28,7 @@ pipeline {
         sh 'python3 sample-selenium-app.py'
         sh 'pkill -f "http.server"'
         sh 'sleep 10'
-        sh 'curl -X DELETE http://127.0.0.1:8000'
+        sh 'curl -X DELETE http://127.0.0.1:8000/api/v1.0/stop'
         }
     }
 
