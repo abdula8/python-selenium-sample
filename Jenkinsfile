@@ -8,7 +8,7 @@ pipeline {
         steps {
         // url lambdatest tunnel file
         sh 'curl -O https://downloads.lambdatest.com/tunnel/v3/linux/64bit/LT_Linux.zip'
-        sh 'sudo apt-get install zip unzip'
+        //sh 'sudo apt-get install zip unzip'
         sh 'unzip -o LT_Linux.zip'
         // We use Environmental variables for storing username and access key as this is the best practice
         // We also need to add these environmental variable in jenkins:
